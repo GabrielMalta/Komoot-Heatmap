@@ -1,4 +1,6 @@
-# Heatmap
+# Heatmap - Work in Progress
+
+blah blah
 
 Draws a heatmap from gpx files.
 
