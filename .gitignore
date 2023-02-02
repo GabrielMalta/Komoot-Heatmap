@@ -3,4 +3,5 @@ gpx/
 __pyache__/
 points.csv
 tours.html
-webpage/getPoints.js
+webpage_gmaps/getPoints.js
+webpage_leaflet/data.js

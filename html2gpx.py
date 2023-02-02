@@ -11,10 +11,13 @@ with open("tours.html", "r") as f:
 tours = soup.find_all("a", {"data-test-id":"tours_list_item_title"})
 url_list = ["https://www.komoot.com" + tour.get("href") + "/download" for tour in tours]
 tour_id = [url.split("/")[-2] for url in url_list]
-already_downloaded = [filename.split("_")[1] for filename in os.listdir("gpx")]
 
-# clear all downloaded files
-# os.system("rm gpx/*")
+
+if os.path.exists("gpx"):
+    already_downloaded = [filename.split("_")[1] for filename in os.listdir("gpx")]
+else:
+    already_downloaded = []
+
 sleep(5)
 
 
