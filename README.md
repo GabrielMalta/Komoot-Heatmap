@@ -12,10 +12,10 @@ Allows automatic download of gpx files from your Komoot tour page.
     3. Ctrl+S to "Save as..." as HTML only to a file named "tours.html" in the repo directory
 2. Download your tours
     1. Configure your browser to download files __without confirmation__ to the __"gpx"__ folder
-    2. Open an empty browser window, run "html2gpx.py", and quickly switch to the url bar
+    2. Open an empty browser window, run `$ python3 html2gpx.py`, and quickly switch to the url bar
     3. Watch as the script automatically opens new tabs and downloads all your tours
-    4. You may need to run "html2gpx.py" a couple times to ensure all files are correctly downloaded, especially if you have a lot of tours. The script only downloads files that have not been downloaded already
-    5. Reminder to undo step 1 otherwise you'll be confused as to where your other downloads are going
+    4. You may need to run `$ python3 html2gpx.py` a couple extra times to ensure all files are correctly downloaded, especially if you have a lot of tours. The script only downloads files that have not been downloaded already
+    5. Reminder to undo step 1 otherwise at a later time you'll be confused as to where your other downloads are going
 3. Generate the heatmap
     1. Run "gpx2leaflet.py"
 4. View the results
