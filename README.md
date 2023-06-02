@@ -10,7 +10,7 @@ Allows automatic download of gpx files from komoot account.
     1. Go to your completed tours page (https://www.komoot.com/user/YOUR_USER_ID/tours?type=recorded)
     2. Scroll down until all tours are loaded
     3. Inspect the page (F12), right click \<html\> and "copy element"
-    4. Paste page contents to a file named "tours.html"
+    4. Paste page contents to a file named "tours.html" in the repo directory
 2. Download your tours
     1. Configure your browser to download files without confirmation to the "gpx" folder
     2. Open an empty browser window, run "html2gpx.py", and quickly switch to the url bar
@@ -25,8 +25,8 @@ Allows automatic download of gpx files from komoot account.
 
 If you would prefer to download your tours manually, just place them in the "gpx" folder and skip steps 1 and 2.
 
-The gpx2leaflet.py has not been tested with gpx from other apps, but should work.
+gpx2leaflet.py has not been tested with gpx from other apps, but should work.
 
 ## TO DO
 
-1. Figure out a way to download tours without using PyAutoGUI
+1. Figure out a more elegant way to download tours, ideally without using PyAutoGUI
