@@ -11,7 +11,7 @@ Allows automatic download of gpx files from your Komoot tour page.
     2. Scroll down until all tours are loaded
     ~~3. Inspect the page (F12), right click \<html\> and "copy element"~~
     ~~4. Paste page contents to a file named "tours.html" in the repo directory~~
-    3. Ctrl+S to "Save as..." as HTML only to a file named tours.html in the repo directory
+    3. Ctrl+S to "Save as..." as HTML only to a file named "tours.html" in the repo directory
 2. Download your tours
     1. Configure your browser to download files __without confirmation__ to the __"gpx"__ folder
     2. Open an empty browser window, run "html2gpx.py", and quickly switch to the url bar
