@@ -24,3 +24,9 @@ Allows automatic download of gpx files from komoot account.
     3. Go to http://0.0.0.0:8080/webpage_leaflet/ on your browser
 
 If you would prefer to download your tours manually, just place them in the "gpx" folder and skip steps 1 and 2.
+
+The gpx2leaflet.py has not been tested with gpx from other apps, but should work.
+
+## TO DO
+
+1. Figure out a way to download tours without using PyAutoGUI
