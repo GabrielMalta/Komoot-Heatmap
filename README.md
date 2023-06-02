@@ -28,4 +28,4 @@ gpx2leaflet.py has not been tested with gpx from other apps, but should work.
 
 ## TO DO
 
-1. Figure out a more elegant way to download tours, ideally without using PyAutoGUI
+1. Figure out a more elegant way to download tours, ideally without using [PyAutoGUI](https://github.com/asweigart/pyautogui)
