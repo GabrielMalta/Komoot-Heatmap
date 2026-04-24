@@ -30,10 +30,11 @@ def main():
 
     already_downloaded = []
 
+    if not os.path.exists(_DOWNLOAD_DIR):
+        os.makedirs(_DOWNLOAD_DIR)
     for f in os.listdir(_DOWNLOAD_DIR):
         if f.endswith('.gpx'):
             already_downloaded.append(f.split(".")[0].split("_")[0])
-    # print(already_downloaded)
 
     # Get the ID of the first tour in the list
     for tour in tours:
@@ -41,7 +42,7 @@ def main():
 
         if str(tour_id) in already_downloaded: continue
         
-        file_name = a.download_tour_gpx_file(tour_id, _DOWNLOAD_DIR)
+        file_name = a.download_tour_gpx(tour_id, _DOWNLOAD_DIR)
         os.rename(os.path.join(_DOWNLOAD_DIR,file_name), os.path.join(_DOWNLOAD_DIR,str(tour_id)+'.gpx'))
         print(tour_id)
 
