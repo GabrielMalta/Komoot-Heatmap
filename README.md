@@ -1,15 +1,16 @@
 # Komoot Heatmap
 
-Downloads your Draws a [Leaflet-Heat](https://github.com/Leaflet/Leaflet.heat) heatmap of your [Komoot](https://www.komoot.com/) activities (or other gpx files) over [OpenStreetMaps](https://www.openstreetmap.org/). Now featuring automagical downloads using [komPYoot](https://github.com/matiyau/komPYoot/).
+Draws a [Leaflet-Heat](https://github.com/Leaflet/Leaflet.heat) heatmap of your [Komoot](https://www.komoot.com/) activities (or other gpx files) over [OpenStreetMaps](https://www.openstreetmap.org/). Now featuring automagical downloads using [komPYoot](https://github.com/matiyau/komPYoot/).
 
 ## Instructions
 
 0. Clone the repo
 1. `$ python -m venv venv && source venv/bin/activate && pip install -r requirements.txt`
-2. Download your activities 
-    1. `$ python3 download_tours.py`
-    2. Enter your komoot credentials
-    3. Watch as the script automagically downloads all your recorded activities
+2. Download your activities
+    1. Ensure none of your activities' names contain reserved characters (no `/`, etc.)
+    2. `$ python3 download_tours.py`
+    3. Enter your komoot credentials
+    4. Watch as the script automagically downloads all your recorded activities
 3. Generate the heatmap
     1. `$ python3 gpx2leaflet.py`
 4. View the results
