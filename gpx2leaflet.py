@@ -31,7 +31,7 @@ with open(output_path, 'w') as output:
                                     ", "+
                                     str(float(point.longitude))+
                                     ",1],\n")
-    output.write("], {radius: 5,blur: 10,maxZoom: 19}).addTo(map);")
+    output.write("], {radius: 8,blur: 2,maxZoom: 19}).addTo(map);")
 
 
 

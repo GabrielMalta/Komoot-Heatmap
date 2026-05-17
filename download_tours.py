@@ -17,17 +17,27 @@ _DOWNLOAD_DIR = "./gpx"
 
 
 def main():
-    print("Please enter your Komoot account credentials.")
+    
+    try:
+        file = open("CREDENTIALS.txt", "r")
+        email_id = file.readline().strip()
+        password = file.readline().strip()
+        file.close()
+    except:
+        print("Please enter your Komoot account credentials.")
 
-    email_id = input("Email ID: ")
-    password = getpass("Password (hidden input): ")
+        email_id = input("Email ID: ")
+        password = getpass("Password (hidden input): ", echo_char='*')
 
+    print("Logging in...")
     a = API()
     a.login(email_id, password)
 
     # Get list of tours with the given filters
+    print("Getting tour list..")
     tours = a.get_user_tours_list(tour_type=TourType.RECORDED)
 
+    print("Downloading new activities..")
     already_downloaded = []
 
     if not os.path.exists(_DOWNLOAD_DIR):
