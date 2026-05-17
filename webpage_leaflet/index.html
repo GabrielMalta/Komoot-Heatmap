@@ -26,12 +26,20 @@
     <script src="./leaflet-heat.js"></script>
     <script>
 
-      var map = L.map('map').setView([39.5, -8.2], 7);
+      var map = L.map('map').setView([48.13, 11.64], 12);
 
-      const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+
+      const tiles = L.tileLayer('https://tile.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+        // subdomains: 'abcd',
+        maxZoom: 19
       }).addTo(map);
+
+
+      // const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      //   maxZoom: 19,
+      //   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      // }).addTo(map);
 
       </script>
     <script src="./data.js"></script>
